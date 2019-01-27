@@ -1,9 +1,13 @@
+html{
+    background-image: url("../picture/wallpaper.png");
+    background-size: 100%;
+}
 body{
-    background-color: lightblue;
     text-align: center;
     display:block;
 }
 .headers h1{
+    text-decoration: none;
     background-color: rgb(200,150,255);
     padding-bottom: 20px;
     text-align: center;
@@ -62,16 +66,27 @@ body{
     width: 350px;
     height:50px;
 }
+/* The animation code */
+@keyframes example {
+    from {background-color: yellow;}
+    to {background-color: paleturquoise;}
+  }
 .container #realListElement{
+    font-weight: bold;
     word-wrap: break-word;
     text-align: center;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 15px;
+    font-size: 20px;
     border-top-style: solid;
     border-top-color: crimson;
     border-top-width: 15px;
-    padding:10px;
+    padding:92px;
+    width: 70%;
     margin: 0 auto; 
+    background-color: paleturquoise;
+    animation-name: example;
+    animation-duration: 1s;
+    
 }
 .container #realList{
     border-top-style: solid;

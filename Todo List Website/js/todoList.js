@@ -11,11 +11,10 @@ function addIntoList(){
         this.todoCounter = 0;
     }
 }
-//TODO: Datum hinzufügen und title schriftgröße verändern!
-//TODO: H1 <a> hinzufügen!
+
 function addCredentialsToList(title, description){
     var realList = document.getElementById("realList");
-    realList.innerHTML += "<li id='realListElement'><p>"+title+"<br>"+description+"</p></li>";
+    realList.innerHTML += "<li id='realListElement'><p>"+new Date()+"</br></p><p>"+title+"<br>"+description+"</p></li>";
     window.scrollTo(0,document.body.scrollHeight/2);
     this.todoCounter+=1;
 }
