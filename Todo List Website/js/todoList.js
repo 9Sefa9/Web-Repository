@@ -26,5 +26,18 @@ function addCredentialsToList(title, description){
     }
     this.todoCounter+=1;
     this.index+=1;
+    //rufe Methode in 4 sekunden.
+    setTimeout(learnMethod,4000);
+}
+function learnMethod(){
     
+    //verlässt nicht das innerste, sondern das ganze:
+    schleife:
+        for(var i=0;i<5;i++){
+            for(var j= 0; j<5;j++){
+                console.log(i*j);
+                if(i*j == 8)
+                    break schleife;
+            }
+        }
 }
