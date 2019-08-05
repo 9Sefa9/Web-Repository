@@ -1,19 +1,20 @@
 var http = require('http');
-var dt = require('./myfirstmodule');
+var dt = require('./myModules');
 var url = require('url');
 
 //create a server object:
 http.createServer(function (request, response) {
-  
   response.writeHead(200, {'Content-Type': 'text/html'});
- // response.write('Hello World!'); //write a response to the client
- // response.write('This is a Date: '+dt.myDateTime());
-  //response.write("This is my URL "+request.url);
 
-  var q = url.parse(request.url, true).query;
-  var txt = q.year + " " + q.month;
+  //falls url so aussieht : http://localhost:8080/?year=2017&month=July
+  //dann kann man parsen: 
+  var urlName = getUrlName(request,url);
+  var txt = getDateFrom(urlName);
+
   response.end(txt);
+
 }).listen(8080); //the server object listens on port 8080
+console.log("Server started");
 
 function getUrlName(request, url){
   return url.parse(request.url, true).query;
