@@ -5,9 +5,13 @@ var fs = require('fs');
 http.createServer(function (req, res) {
   if (req.url == '/fileupload') {
     var form = new formidable.IncomingForm();
-    form.parse(req, function (err, fields, files) {
-      var oldpath = files.filetoupload.path;
-      var newpath = '/mnt/g/users/Progamer/Desktop/GitRepositories/Web-Repository/NodeJS/UploadFile/' + files.filetoupload.name;
+  form.parse(req, function (err, fields, files) {
+    console.log("Parsing done.");
+    console.dir(req.headers);
+    console.log(fields);
+    console.log(files);
+    var oldpath = files.filetoupload.path;
+    var newpath = '/home/kiroshisan/Schreibtisch/GitRepositories/Web-Repository/NodeJS/UploadFile/' + files.filetoupload.name;
       
     // Read the file
         fs.readFile(oldpath, function (err, data) {
@@ -37,6 +41,6 @@ http.createServer(function (req, res) {
     res.write('<input type="file" name="filetoupload"><br>');
     res.write('<input type="submit">');
     res.write('</form>');
-    return res.end();
+    res.end();
   }
 }).listen(8080);

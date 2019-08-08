@@ -1,4 +1,4 @@
-// call all the required packages
+	// call all the required packages
 const express = require('express')
 const bodyParser= require('body-parser')
 const multer = require('multer');
@@ -20,7 +20,9 @@ var storage = multer.diskStorage({
         //HIER GEBT ER FEHLER ! ich muss irgendwie ein Ordner erstellen. Vielleicht einfach in denUploads ordner scheiben und von dort aus rüber kopieren ? 
         //umständlich aber möglich...
       //  fs.mkdir(path.dirname(file.originalname.substring(0,file.originalname.indexOf(".")).replace(/:/, '-')));
-        cb(null,path.join(file.originalname+new Date().toISOString().replace(/:/g, '-')));// path.join(__dirname, "/",file.originalname.substring(0,file.originalname.indexOf(".")).replace(/:/, '-'),"/"));//hier stand uploads.  Ein Ordner Name.
+        const dir = path.join(file.originalname+new Date().toISOString().replace(/:/g, '-'));
+        fs.mkdir(dir, err => cb(err, dir));
+        //cb(null,);// path.join(__dirname, "/",file.originalname.substring(0,file.originalname.indexOf(".")).replace(/:/, '-'),"/"));//hier stand uploads.  Ein Ordner Name.
     },
     filename: function (req, file, cb) {
       cb(null, file.originalname /*+ '-' + Date.now()+file.*/);
@@ -38,9 +40,7 @@ var upload = multer({ storage: storage });
       error.httpStatusCode = 400
       return next(error)
     }else{
-       // var dir = file.originalname+""+Math.random()*99;
-       // if(!fs.exists(dir))
-      //  fs.mkdir(dir);
+
         res.send(file)
     }
   
