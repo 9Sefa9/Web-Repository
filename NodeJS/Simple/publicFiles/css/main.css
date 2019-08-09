@@ -1,0 +1,118 @@
+body{
+    text-align: center;
+    display:block;
+}
+@media only screen and (max-width:2560px) {
+    /* For Desktop: */
+    .container {
+      width: 100%;
+      margin-top: 10rem;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 6rem;
+      color: black;
+      background: #eee;
+      border: 3px solid rgb(48, 165, 130);
+      background: -moz-linear-gradient(top, #EEE, #FFF);    
+      background: -webkit-linear-gradient(top, rgb(176, 223, 209), rgba(176, 223, 209, 0.034));
+      background: -ms-linear-gradient(top, #eee, #fff);
+      background: -o-linear-gradient(top, #eee, #fff);
+      box-shadow: 1px 6px 6px rgba(15, 15, 15, 0.623);
+    }
+    .container-upload{
+      padding-bottom: 0rem;
+      width: 60%;
+      margin: 1rem auto;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 3rem;
+      color: black;
+      background: #eee;
+      border: 3px solid rgb(48, 165, 130);
+      background: -moz-linear-gradient(top, #EEE, #FFF);    
+      background: -webkit-linear-gradient(top, rgb(255, 230, 230), rgba(34, 34, 34, 0.034));
+      background: -ms-linear-gradient(top, #eee, #fff);
+      background: -o-linear-gradient(top, #eee, #fff);
+      box-shadow: 1px 6px 6px rgba(15, 15, 15, 0.623);
+    }
+    .container-title{
+      text-decoration: none;
+      color:black;
+      border-style: groove green;
+    }
+    #subtitle{
+      font-size: 20%;
+    }
+
+
+    /*entnommen aus: https://tympanus.net/codrops/2015/09/15/styling-customizing-file-inputs-smart-way/*/
+    #uploadInput{
+      background-color: rgb(255, 220, 234); /* Green */
+      border: dotted;
+      color: black;
+      padding: 16px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 20px;
+      margin: 4px 2px;
+      -webkit-transition-duration: 0.4s; /* Safari */
+      transition-duration: 0.4s;
+      cursor: pointer;
+    }
+    #uploadInput:hover{
+      background-color: rgb(166, 245, 179);
+      color: rgb(0, 0, 0);
+    }
+  }
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .container {
+    width: 100%;
+    margin-top: 10rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 6rem;
+    color: black;
+    background: #eee;
+    border: 3px solid rgb(48, 165, 130);
+    background: -moz-linear-gradient(top, #EEE, #FFF);    
+    background: -webkit-linear-gradient(top, rgb(176, 223, 209), rgba(176, 223, 209, 0.034));
+    background: -ms-linear-gradient(top, #eee, #fff);
+    background: -o-linear-gradient(top, #eee, #fff);
+    box-shadow: 1px 6px 6px rgba(15, 15, 15, 0.623);
+
+  }
+  .container-title{
+    text-decoration: none;
+    color:black;
+    border-style: groove green;
+  }
+  #subtitle{
+    font-size: 20%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .container {
+    width: 100%;
+    margin-top: 10rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 6rem;
+    color: black;
+    background: #eee;
+    border: 3px solid rgb(48, 165, 130);
+    background: -moz-linear-gradient(top, #EEE, #FFF);    
+    background: -webkit-linear-gradient(top, rgb(176, 223, 209), rgba(176, 223, 209, 0.034));
+    background: -ms-linear-gradient(top, #eee, #fff);
+    background: -o-linear-gradient(top, #eee, #fff);
+    box-shadow: 1px 6px 6px rgba(15, 15, 15, 0.623);
+
+  }
+  .container-title{
+    text-decoration: none;
+    color:black;
+    border-style: groove green;
+  }
+  #subtitle{
+    font-size: 20%;
+  }
+}
