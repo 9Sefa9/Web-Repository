@@ -6,7 +6,16 @@ const fs = require("fs");
 const path = require("path");
 //CREATE EXPRESS APP
 const app = express();
+const exec = require('child_process').exec
 
+exec('google-chrome-stable http://localhost:8080/' , function(err) {
+if(err){ //process error
+}
+
+else{ console.log("success open")
+}
+
+});
 //um auf Css und Javascript daten zuzugreifen.
 app.use(express.static("publicFiles"));
 
