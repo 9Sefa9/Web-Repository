@@ -42,9 +42,9 @@
     #subtitle{
       font-size: 20%;
     }
-
-
-    /*entnommen aus: https://tympanus.net/codrops/2015/09/15/styling-customizing-file-inputs-smart-way/*/
+    .formUploads{
+      background-color: rgb(202, 202, 223);
+    }
     #uploadInput{
       background-color: rgb(255, 220, 234); /* Green */
       border: dashed rgb(211, 87, 5);
@@ -60,38 +60,30 @@
       transition-duration: 0.4s;
       cursor: pointer;
     }
+    
     #uploadInput:hover{
       background-color: rgb(166, 245, 179);
       color: rgb(0, 0, 0);
     }
     #uploadSelect{
-      background-color: rgb(255, 220, 234); 
-      
+      text-align: center;
+      display: inline-block;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       font-size: 20px;
-      padding: 4.5rem 351px 10rem;
+      padding: 1rem 13rem ;
+      border: 3px dashed rgb(133, 86, 130);
+      text-decoration: none;
+     /* padding: 20px 10px 100px 150px;*/
     }
-    .formUploads{
-      background-color: rgb(202, 202, 223);
-    }
-    input[type="file"] {
-      left: 390px;
-      opacity: 0;
-      overflow: hidden;
-      position: absolute;
-      cursor: pointer;
-      
-    }
-    .uploadSelectLabel{
-      color: rgb(97, 99, 52);
-      background-color: rgb(204, 213, 224);
-      border: 1.5px dashed rgb(80, 80, 80);
-      padding-bottom: 20px; 
-      line-height: 5em;
-
-    }
+    
 
   }
+
+
+
+
+
+  
 
 
 
