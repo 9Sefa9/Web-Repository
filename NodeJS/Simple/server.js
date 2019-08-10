@@ -10,6 +10,7 @@ const exec = require('child_process').exec
 
 exec('google-chrome-stable http://localhost:8080/' , function(err) {
 if(err){ //process error
+    console.log("Process not Linux!");
 }
 
 else{ console.log("success open")

@@ -5,7 +5,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" />
-  <title>Simple.</title>
 
 <body>
   <div class="container">
@@ -16,10 +15,12 @@
   </div>
   
   <div class="container-upload">
-    <form action="/uploadmultiple"  enctype="multipart/form-data" method="POST">
-      <input id="uploadSelect" type="file" name="myFiles" multiple>
-      <label for="myFiles">drag & drop or select files</label>
-      <input id="uploadInput" type="submit" value="Upload"/>
+    <form class="formUploads"action="/uploadmultiple"  enctype="multipart/form-data" method="POST">   
+      <div class="inputs">
+        <input id="uploadSelect" type="file" name="myFiles" multiple>
+        <label for="myFiles" class="uploadSelectLabel">drag & drop or click</label>
+        <input id="uploadInput" type="submit" value="Upload"/>
+      </div> 
     </form>
   </div>
  <!--  SINGLE FILE 

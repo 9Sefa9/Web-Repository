@@ -1,6 +1,7 @@
-body{
-    text-align: center;
-    display:block;
+*{
+
+  text-align: center;
+  display:block;
 }
 @media only screen and (max-width:2560px) {
     /* For Desktop: */
@@ -21,7 +22,7 @@ body{
     .container-upload{
       padding-bottom: 0rem;
       width: 60%;
-      margin: 1rem auto;
+      margin: 3rem auto;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       font-size: 3rem;
       color: black;
@@ -46,7 +47,7 @@ body{
     /*entnommen aus: https://tympanus.net/codrops/2015/09/15/styling-customizing-file-inputs-smart-way/*/
     #uploadInput{
       background-color: rgb(255, 220, 234); /* Green */
-      border: dotted;
+      border: dashed rgb(211, 87, 5);
       color: black;
       padding: 16px 32px;
       text-align: center;
@@ -63,7 +64,38 @@ body{
       background-color: rgb(166, 245, 179);
       color: rgb(0, 0, 0);
     }
+    #uploadSelect{
+      background-color: rgb(255, 220, 234); 
+      
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 20px;
+      padding: 4.5rem 351px 10rem;
+    }
+    .formUploads{
+      background-color: rgb(202, 202, 223);
+    }
+    input[type="file"] {
+      left: 390px;
+      opacity: 0;
+      overflow: hidden;
+      position: absolute;
+      cursor: pointer;
+      
+    }
+    .uploadSelectLabel{
+      color: rgb(97, 99, 52);
+      background-color: rgb(204, 213, 224);
+      border: 1.5px dashed rgb(80, 80, 80);
+      padding-bottom: 20px; 
+      line-height: 5em;
+
+    }
+
   }
+
+
+
+
 @media only screen and (max-width:800px) {
   /* For tablets: */
   .container {
