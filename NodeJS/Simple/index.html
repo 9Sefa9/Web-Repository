@@ -18,6 +18,7 @@
     <form class="formUploads"action="/uploadmultiple"  enctype="multipart/form-data" method="POST">   
       <div class="inputs">
         <input id="uploadSelect" type="file" name="myFiles" multiple>
+        <label for="myFiles" class="uploadSelectLabel">drag & drop or click</label>
         <input id="uploadInput" type="submit" value="Upload"/>
       </div> 
     </form>
@@ -25,6 +26,7 @@
   <script src="js/app.js"></script>
 </body>
 </html>
+
  <!-- <label for="myFiles" class="uploadSelectLabel">drag & drop or click</label>-->
   <!--  SINGLE FILE 
 <form action="/uploadfile" enctype="multipart/form-data" method="POST"> 

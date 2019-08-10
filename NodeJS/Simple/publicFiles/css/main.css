@@ -71,9 +71,15 @@
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       font-size: 20px;
       padding: 1rem 13rem ;
-      border: 3px dashed rgb(133, 86, 130);
+      border: 3px dashed rgb(155, 103, 151);
       text-decoration: none;
      /* padding: 20px 10px 100px 150px;*/
+    }
+    input[type="file"]{
+     
+    }
+    .uploadSelectLabel{
+     
     }
     
 
