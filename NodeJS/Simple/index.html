@@ -18,9 +18,11 @@
   <div class="container-upload">
     <form class="formUploads"action="/uploadmultiple"  enctype="multipart/form-data" method="POST">   
       <div class="inputs">
-        <input id="uploadSelect" type="file" name="myFiles" multiple>
-        <label for="myFiles" class="uploadSelectLabel"><span>drag & drop or click</span></label>
-        <input id="uploadInput" type="submit" value="Upload"/>
+        <div class="uploadSelectInput">
+          <input id="uploadSelect" type="file" name="myFiles" multiple>
+          <label for="myFiles" class="uploadSelectLabel"><span>drag & drop or click</span></label>
+        </div>
+          <input id="uploadInput" type="submit" value="Upload"/>
       </div> 
     </form>
   </div>

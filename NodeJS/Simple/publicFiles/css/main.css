@@ -6,8 +6,8 @@
 @media only screen and (max-width:1920px) {
     /* For Desktop: */
     .container {
-      width: 100%;
-      margin-top: 10rem;
+      width: auto;
+      margin-top: 4rem;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       font-size: 6rem;
       color: black;
@@ -70,20 +70,25 @@
     #uploadSelect{
       text-align: center;
       display: inline-block;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
       font-size: 20px;
       padding: 1rem 13rem ;
-      border: 3px dashed rgb(155, 103, 151);
       text-decoration: none;
       /*width:auto;*/ 
     }
     input[type="file"]{
-    opacity: 0.5;
-    overflow: hidden;
-    position: absolute;
-
+      opacity: 0;
+      position: absolute;
+      right:19rem;
+      left: 19rem;
+      margin-top: .3rem;
+      width: 28rem;;
     }
-
+    .uploadSelectLabel{
+      background-color: rgb(179, 221, 175);
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      border: 3px dashed rgb(155, 103, 151);
+      line-height: 4rem;
+    }
   }
 
 
