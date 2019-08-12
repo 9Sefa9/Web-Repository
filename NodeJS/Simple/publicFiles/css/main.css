@@ -75,8 +75,13 @@
       padding: 1rem 13rem ;
       border: 3px dashed rgb(155, 103, 151);
       text-decoration: none;
-      width:auto;
-      
+      /*width:auto;*/ 
+    }
+    input[type="file"]{
+    opacity: 0.5;
+    overflow: hidden;
+    position: absolute;
+
     }
 
   }
