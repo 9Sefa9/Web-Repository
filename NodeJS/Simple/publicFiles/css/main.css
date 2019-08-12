@@ -3,7 +3,7 @@
   text-align: center;
   display:block;
 }
-@media only screen and (max-width:2560px) {
+@media only screen and (max-width:1920px) {
     /* For Desktop: */
     .container {
       width: 100%;
@@ -35,6 +35,8 @@
       box-shadow: 1px 6px 6px rgba(15, 15, 15, 0.623);
     }
     .container-title{
+      margin-left:auto;
+      margin-right:auto;
       text-decoration: none;
       color:black;
       border-style: groove green;
@@ -73,15 +75,9 @@
       padding: 1rem 13rem ;
       border: 3px dashed rgb(155, 103, 151);
       text-decoration: none;
-     /* padding: 20px 10px 100px 150px;*/
+      width:auto;
+      max-width: 500px;
     }
-    input[type="file"]{
-     
-    }
-    .uploadSelectLabel{
-     
-    }
-    
 
   }
 
@@ -95,7 +91,7 @@
 
 
 @media only screen and (max-width:800px) {
-  /* For tablets: */
+  /* For tablets and so on : */
   .container {
     width: 100%;
     margin-top: 10rem;
@@ -103,15 +99,31 @@
     font-size: 6rem;
     color: black;
     background: #eee;
-    border: 3px solid rgb(48, 165, 130);
+  border: 3px solid rgb(48, 165, 130);
     background: -moz-linear-gradient(top, #EEE, #FFF);    
     background: -webkit-linear-gradient(top, rgb(176, 223, 209), rgba(176, 223, 209, 0.034));
     background: -ms-linear-gradient(top, #eee, #fff);
     background: -o-linear-gradient(top, #eee, #fff);
     box-shadow: 1px 6px 6px rgba(15, 15, 15, 0.623);
-
+  }
+  .container-upload{
+    padding-bottom: 0rem;
+    width: 60%;
+    margin: 3rem auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3rem;
+    color: black;
+    background: #eee;
+    border: 3px solid rgb(48, 165, 130);
+    background: -moz-linear-gradient(top, #EEE, #FFF);    
+    background: -webkit-linear-gradient(top, rgb(255, 230, 230), rgba(34, 34, 34, 0.034));
+    background: -ms-linear-gradient(top, #eee, #fff);
+    background: -o-linear-gradient(top, #eee, #fff);
+    box-shadow: 1px 6px 6px rgba(15, 15, 15, 0.623);
   }
   .container-title{
+    margin-left:auto;
+    margin-right:auto;
     text-decoration: none;
     color:black;
     border-style: groove green;
@@ -119,6 +131,40 @@
   #subtitle{
     font-size: 20%;
   }
+  .formUploads{
+    background-color: rgb(202, 202, 223);
+  }
+  #uploadInput{
+    background-color: rgb(255, 220, 234); /* Green */
+    border: dashed rgb(211, 87, 5);
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  #uploadInput:hover{
+    background-color: rgb(166, 245, 179);
+    color: rgb(0, 0, 0);
+  }
+  #uploadSelect{
+    text-align: center;
+    display: inline-block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    padding: 1rem 13rem ;
+    border: 3px dashed rgb(155, 103, 151);
+    text-decoration: none;
+   /* padding: 20px 10px 100px 150px;*/
+  }
+
 }
 @media only screen and (max-width:500px) {
   /* For mobile phones: */
@@ -129,20 +175,69 @@
     font-size: 6rem;
     color: black;
     background: #eee;
-    border: 3px solid rgb(48, 165, 130);
+  border: 3px solid rgb(48, 165, 130);
     background: -moz-linear-gradient(top, #EEE, #FFF);    
     background: -webkit-linear-gradient(top, rgb(176, 223, 209), rgba(176, 223, 209, 0.034));
     background: -ms-linear-gradient(top, #eee, #fff);
     background: -o-linear-gradient(top, #eee, #fff);
     box-shadow: 1px 6px 6px rgba(15, 15, 15, 0.623);
-
+  }
+  .container-upload{
+    padding-bottom: 0rem;
+    width: 60%;
+    margin: 3rem auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3rem;
+    color: black;
+    background: #eee;
+    border: 3px solid rgb(48, 165, 130);
+    background: -moz-linear-gradient(top, #EEE, #FFF);    
+    background: -webkit-linear-gradient(top, rgb(255, 230, 230), rgba(34, 34, 34, 0.034));
+    background: -ms-linear-gradient(top, #eee, #fff);
+    background: -o-linear-gradient(top, #eee, #fff);
+    box-shadow: 1px 6px 6px rgba(15, 15, 15, 0.623);
   }
   .container-title{
+    margin-left:auto;
+    margin-right:auto;
     text-decoration: none;
     color:black;
     border-style: groove green;
   }
   #subtitle{
     font-size: 20%;
+  }
+  .formUploads{
+    background-color: rgb(202, 202, 223);
+  }
+  #uploadInput{
+    background-color: rgb(255, 220, 234); /* Green */
+    border: dashed rgb(211, 87, 5);
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  #uploadInput:hover{
+    background-color: rgb(166, 245, 179);
+    color: rgb(0, 0, 0);
+  }
+  #uploadSelect{
+    text-align: center;
+    display: inline-block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    padding: 1rem 13rem ;
+    border: 3px dashed rgb(155, 103, 151);
+    text-decoration: none;
+   /* padding: 20px 10px 100px 150px;*/
   }
 }
