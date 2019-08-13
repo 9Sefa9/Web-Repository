@@ -73,21 +73,23 @@
       font-size: 20px;
       padding: 1rem 13rem ;
       text-decoration: none;
-      /*width:auto;*/ 
     }
     input[type="file"]{
       opacity: 0;
       position: absolute;
-      right:19rem;
-      left: 19rem;
+      left: 20%;
       margin-top: .3rem;
-      width: 28rem;;
+      width: 35%;
+
     }
     .uploadSelectLabel{
       background-color: rgb(179, 221, 175);
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       border: 3px dashed rgb(155, 103, 151);
       line-height: 4rem;
+    }
+    .uploadSelectInput{
+        
     }
   }
 
@@ -101,15 +103,15 @@
 
 
 @media only screen and (max-width:800px) {
-  /* For tablets and so on : */
+  /* For Desktop: */
   .container {
-    width: 100%;
-    margin-top: 10rem;
+    width: auto;
+    margin-top: 4rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 6rem;
     color: black;
     background: #eee;
-  border: 3px solid rgb(48, 165, 130);
+    border: 3px solid rgb(48, 165, 130);
     background: -moz-linear-gradient(top, #EEE, #FFF);    
     background: -webkit-linear-gradient(top, rgb(176, 223, 209), rgba(176, 223, 209, 0.034));
     background: -ms-linear-gradient(top, #eee, #fff);
@@ -167,25 +169,40 @@
   #uploadSelect{
     text-align: center;
     display: inline-block;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
     padding: 1rem 13rem ;
-    border: 3px dashed rgb(155, 103, 151);
     text-decoration: none;
-   /* padding: 20px 10px 100px 150px;*/
+  }
+  input[type="file"]{
+    opacity: 0;
+    position: absolute;
+    left: 20%;
+    margin-top: .3rem;
+    width: 35%;
+
+  }
+  .uploadSelectLabel{
+    background-color: rgb(179, 221, 175);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 3px dashed rgb(155, 103, 151);
+    line-height: 4rem;
+  }
+  .uploadSelectInput{
+      
   }
 
 }
 @media only screen and (max-width:500px) {
   /* For mobile phones: */
+  /* For Desktop: */
   .container {
-    width: 100%;
-    margin-top: 10rem;
+    width: auto;
+    margin-top: 4rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 6rem;
     color: black;
     background: #eee;
-  border: 3px solid rgb(48, 165, 130);
+    border: 3px solid rgb(48, 165, 130);
     background: -moz-linear-gradient(top, #EEE, #FFF);    
     background: -webkit-linear-gradient(top, rgb(176, 223, 209), rgba(176, 223, 209, 0.034));
     background: -ms-linear-gradient(top, #eee, #fff);
@@ -243,11 +260,25 @@
   #uploadSelect{
     text-align: center;
     display: inline-block;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
     padding: 1rem 13rem ;
-    border: 3px dashed rgb(155, 103, 151);
     text-decoration: none;
-   /* padding: 20px 10px 100px 150px;*/
+  }
+  input[type="file"]{
+    opacity: 0;
+    position: absolute;
+    left: 20%;
+    margin-top: .3rem;
+    width: 35%;
+
+  }
+  .uploadSelectLabel{
+    background-color: rgb(179, 221, 175);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 3px dashed rgb(155, 103, 151);
+    line-height: 4rem;
+  }
+  .uploadSelectInput{
+      
   }
 }
