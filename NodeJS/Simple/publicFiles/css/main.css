@@ -3,16 +3,16 @@
   text-align: center;
   display:block;
 }
-@media only screen and (max-width:2560px) {
+@media only screen and (max-width:1920px) {
     /* For Desktop: */
     .container {
-      width: 100%;
-      margin-top: 6rem;
+      width: auto;
+      margin-top: 4rem;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       font-size: 6rem;
       color: black;
       background: #eee;
-      border: 3px solid rgb(109, 148, 255);
+      border: 3px solid rgb(48, 165, 130);
       background: -moz-linear-gradient(top, #EEE, #FFF);    
       background: -webkit-linear-gradient(top, rgb(176, 223, 209), rgba(176, 223, 209, 0.034));
       background: -ms-linear-gradient(top, #eee, #fff);
@@ -35,6 +35,8 @@
       box-shadow: 1px 6px 6px rgba(15, 15, 15, 0.623);
     }
     .container-title{
+      margin-left:auto;
+      margin-right:auto;
       text-decoration: none;
       color:black;
       border-style: groove green;
@@ -42,9 +44,9 @@
     #subtitle{
       font-size: 20%;
     }
-
-
-    /*entnommen aus: https://tympanus.net/codrops/2015/09/15/styling-customizing-file-inputs-smart-way/*/
+    .formUploads{
+      background-color: rgb(202, 202, 223);
+    }
     #uploadInput{
       background-color: rgb(255, 220, 234); /* Green */
       border: dashed rgb(211, 87, 5);
@@ -60,63 +62,51 @@
       transition-duration: 0.4s;
       cursor: pointer;
     }
+    
     #uploadInput:hover{
       background-color: rgb(166, 245, 179);
       color: rgb(0, 0, 0);
     }
     #uploadSelect{
-      background-color: rgb(255, 220, 234); 
-      
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      text-align: center;
+      display: inline-block;
       font-size: 20px;
-      padding: 4.5rem 351px 10rem;
+      padding: 1rem 13rem ;
+      text-decoration: none;
     }
-    .formUploads{
-      background-color: rgb(202, 202, 223);
-    }
-    input[type="file"] {
-      left: 0; 
-      right: 0; 
-      margin-left: auto; 
-      margin-right: auto;
-      top: 390px;
-      height: 0px;
-      bottom: 200px;
-      width: 460px; /* Need a specific value to work */
+    input[type="file"]{
       opacity: 0;
-      overflow: hidden;
       position: absolute;
-      cursor: pointer;
-      
+      left: 20%;
+      margin-top: .3rem;
+      width: 35%;
+
     }
     .uploadSelectLabel{
-      padding-top: 53px;
-      color: rgb(97, 99, 52);
-      background-color: rgb(204, 213, 224);
-      border: 1.5px dashed rgb(80, 80, 80);
-      padding-bottom: 30px; 
-      line-height: 5em;
-      font-size: 60%;
+      background-color: rgb(179, 221, 175);
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      border: 3px dashed rgb(155, 103, 151);
+      line-height: 4rem;
     }
-    .uploadList{
-      font-size:50%; 
-      left: 0; 
-      right: 0; 
-      margin-left: auto; 
-      margin-right: auto;
-      border: dashed rgb(139, 70, 130);
-      padding: 0;
+    .uploadSelectInput{
+        
     }
   }
+
+
+
+
+
+  
 
 
 
 
 @media only screen and (max-width:800px) {
-  /* For tablets: */
+  /* For Desktop: */
   .container {
-    width: 100%;
-    margin-top: 10rem;
+    width: auto;
+    margin-top: 4rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 6rem;
     color: black;
@@ -144,6 +134,8 @@
     box-shadow: 1px 6px 6px rgba(15, 15, 15, 0.623);
   }
   .container-title{
+    margin-left:auto;
+    margin-right:auto;
     text-decoration: none;
     color:black;
     border-style: groove green;
@@ -151,9 +143,9 @@
   #subtitle{
     font-size: 20%;
   }
-
-
-  /*entnommen aus: https://tympanus.net/codrops/2015/09/15/styling-customizing-file-inputs-smart-way/*/
+  .formUploads{
+    background-color: rgb(202, 202, 223);
+  }
   #uploadInput{
     background-color: rgb(255, 220, 234); /* Green */
     border: dashed rgb(211, 87, 5);
@@ -169,42 +161,43 @@
     transition-duration: 0.4s;
     cursor: pointer;
   }
+  
   #uploadInput:hover{
     background-color: rgb(166, 245, 179);
     color: rgb(0, 0, 0);
   }
   #uploadSelect{
-    background-color: rgb(255, 220, 234); 
-    
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    display: inline-block;
     font-size: 20px;
-    padding: 4.5rem 351px 10rem;
+    padding: 1rem 13rem ;
+    text-decoration: none;
   }
-  .formUploads{
-    background-color: rgb(202, 202, 223);
-  }
-  input[type="file"] {
-    left: 390px;
+  input[type="file"]{
     opacity: 0;
-    overflow: hidden;
     position: absolute;
-    cursor: pointer;
-    
-  }
-  .uploadSelectLabel{
-    color: rgb(97, 99, 52);
-    background-color: rgb(204, 213, 224);
-    border: 1.5px dashed rgb(80, 80, 80);
-    padding-bottom: 20px; 
-    line-height: 5em;
+    left: 20%;
+    margin-top: .3rem;
+    width: 35%;
 
   }
+  .uploadSelectLabel{
+    background-color: rgb(179, 221, 175);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 3px dashed rgb(155, 103, 151);
+    line-height: 4rem;
+  }
+  .uploadSelectInput{
+      
+  }
+
 }
 @media only screen and (max-width:500px) {
   /* For mobile phones: */
+  /* For Desktop: */
   .container {
-    width: 100%;
-    margin-top: 10rem;
+    width: auto;
+    margin-top: 4rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 6rem;
     color: black;
@@ -232,6 +225,8 @@
     box-shadow: 1px 6px 6px rgba(15, 15, 15, 0.623);
   }
   .container-title{
+    margin-left:auto;
+    margin-right:auto;
     text-decoration: none;
     color:black;
     border-style: groove green;
@@ -239,9 +234,9 @@
   #subtitle{
     font-size: 20%;
   }
-
-
-  /*entnommen aus: https://tympanus.net/codrops/2015/09/15/styling-customizing-file-inputs-smart-way/*/
+  .formUploads{
+    background-color: rgb(202, 202, 223);
+  }
   #uploadInput{
     background-color: rgb(255, 220, 234); /* Green */
     border: dashed rgb(211, 87, 5);
@@ -257,34 +252,33 @@
     transition-duration: 0.4s;
     cursor: pointer;
   }
+  
   #uploadInput:hover{
     background-color: rgb(166, 245, 179);
     color: rgb(0, 0, 0);
   }
   #uploadSelect{
-    background-color: rgb(255, 220, 234); 
-    
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    display: inline-block;
     font-size: 20px;
-    padding: 4.5rem 351px 10rem;
+    padding: 1rem 13rem ;
+    text-decoration: none;
   }
-  .formUploads{
-    background-color: rgb(202, 202, 223);
-  }
-  input[type="file"] {
-    left: 390px;
+  input[type="file"]{
     opacity: 0;
-    overflow: hidden;
     position: absolute;
-    cursor: pointer;
-    
+    left: 20%;
+    margin-top: .3rem;
+    width: 35%;
+
   }
   .uploadSelectLabel{
-    color: rgb(97, 99, 52);
-    background-color: rgb(204, 213, 224);
-    border: 1.5px dashed rgb(80, 80, 80);
-    padding-bottom: 20px; 
-    line-height: 5em;
-
+    background-color: rgb(179, 221, 175);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 3px dashed rgb(155, 103, 151);
+    line-height: 4rem;
+  }
+  .uploadSelectInput{
+      
   }
 }

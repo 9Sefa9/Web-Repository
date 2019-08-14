@@ -3,7 +3,8 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
   <link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" />
 
 <body>
@@ -17,28 +18,25 @@
   <div class="container-upload">
     <form class="formUploads"action="/uploadmultiple"  enctype="multipart/form-data" method="POST">   
       <div class="inputs">
-        <!--<input id="uploadSelect" type="file" name="myFiles" multiple>-->
-        <!--<label for="myFiles" class="uploadSelectLabel">drag & drop or click</label>-->
-        
-        <div class="box">
-					<input id="uploadSelect" type="file" name="myFiles" data-multiple-caption="{count} files selected." multiple>
-          <label for="myFiles" class="uploadSelectLabel">
-            <span>drag and drop or click.</span>
-          </label>
-				</div>
-        <ul class="uploadList"><!--Will be filled--></ul>
-        <input id="uploadInput" type="submit" value="Upload"/>
+        <div class="uploadSelectInput">
+          <input id="uploadSelect" type="file" name="myFiles" multiple>
+          <label for="myFiles" class="uploadSelectLabel"><span>drag & drop or click</span></label>
+        </div>
+          <input id="uploadInput" type="submit" value="Upload"/>
       </div> 
     </form>
   </div>
- <!--  SINGLE FILE 
+  <script src="js/app.js"></script>
+</body>
+</html>
+
+ <!-- <label for="myFiles" class="uploadSelectLabel">drag & drop or click</label>-->
+  <!--  SINGLE FILE 
 <form action="/uploadfile" enctype="multipart/form-data" method="POST"> 
    <input type="file" name="myFile" />
    <input type="submit" value="Upload a file"/>
 </form>-->
-<script src="js/app.js"></script>
-</body>
-</html>
+
  
 <!-- MULTIPLE FILES 
 
