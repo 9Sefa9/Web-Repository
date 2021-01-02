@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <h1 id="title">This is the title</h1>
+    <p id="description">this is the description</p>
+  </head>
+  <body>
+  <main id="main">
+  <section>
+  <form id="survey-form">
+    
+    <label id="name-label" for="name">Name:</label>
+    <input type="text" id="name" placeholder="First/Last Name" required></input>
+    
+    <label id="email-label"for="email">E-mail:</label>
+    <input type="email" id="email" placeholder="Your current mail" required ></input>
+    
+    <label id="number-label"for="number">Number:</label>
+    <input type="number" id="number" min=10 max=17 placeholder="Your phonenumber"></input> 
+  
+   <label id="dropdown-label" for="dropdown">Options:</label>
+  <select name="Selections" id="dropdown">
+  <option value="volvo">Volvo</option>
+  <option value="Porsche">Porsche</option>
+  <option value="mercedes">Mercedes</option>
+  </select>
+  
+  
+  
+  <label for="volvo">Volvo:</label>
+  <input type="radio" id="volvo" value="v" name="main-group"></input>
+  
+ <label for="porsche">Porsche:</label>
+  <input type="radio" id="porsche" value="p" name="main-group"></input>
+
+ <label for="mercedes">Mercedes:</label>
+  <input type="radio" id="mercedes" value="m" name="main-group"></input>
+
+
+
+  
+  <label for="volvo">Volvo:</label>
+  <input type="checkbox" id="volvo" value="v" ></input>
+  
+ 
+ <label for="porsche">Porsche:</label>
+  <input type="checkbox" id="porsche" value="p" ></input>
+
+ <label for="mercedes">Mercedes:</label>
+  <input type="checkbox" id="mercedes" value="m" ></input>
+    
+<label for="comments-label">Additional comments:</label>
+<textarea id="comments"></textarea>
+<input type="submit" id="submit" ></input>
+</form>
+  </section>
+  </main>
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
